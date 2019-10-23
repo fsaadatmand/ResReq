@@ -1,8 +1,8 @@
-CXX = clang++
-CFLAGS = -g -Wall -Wextra -pedantic -std=c++17
-DEPS = Date.h
+CXX = g++
+CFLAGS = -g -Wall -Wextra -pedantic -std=c++17 -lboost_date_time
+DEPS = ddiff.h
 TARGET = ddiff
-OBJ = $(TARGET).o Date.cpp
+OBJ = $(TARGET).o ddiff_functions.o
 
 %.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< $(CFLAGS)
