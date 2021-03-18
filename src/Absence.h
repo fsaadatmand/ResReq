@@ -16,7 +16,6 @@ class Absence {
 		Absence(const boost::gregorian::date_period &p, const std::string &str) :
 			period(p), days(p.length()), comment(str) {}
 		auto dates() const { return period; } 
-	//	auto length() const { return days; }
 		auto reason() const { return comment; }
 	private:
 		boost::gregorian::date_period period;

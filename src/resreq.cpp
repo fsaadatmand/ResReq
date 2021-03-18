@@ -13,8 +13,7 @@
 int main(int argc, char **argv)
 {
 	using boost::gregorian::date_period;
-//	using boost::gregorian::date_duration;
-	using boost::gregorian::days; // typedef of date_duration
+	using boost::gregorian::days;
 	using boost::gregorian::from_string;
 	using boost::gregorian::date;
 

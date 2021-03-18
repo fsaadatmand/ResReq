@@ -18,7 +18,6 @@
 #include <vector>
 
 using boost::gregorian::date;
-//using boost::gregorian::date_duration;
 using boost::gregorian::days;
 using boost::gregorian::date_period;
 
@@ -50,7 +49,6 @@ loadFile(const std::string &filename)
 	std::ifstream inFile(filename);
 	if (!inFile)
 		throw std::runtime_error("cannot open file");
-//		die({ "cannot open file", filename });
 	std::vector<std::string> data;
 	std::string line;
 	while (std::getline(inFile, line)) {
