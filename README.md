@@ -5,4 +5,4 @@ A residency requirement calculator for Citizenship and Immigration Canada
 make clean && make
 
 ## To run (Linux):
-./build/resreq [option] *italic* filename
+./build/resreq [option] *filename*
