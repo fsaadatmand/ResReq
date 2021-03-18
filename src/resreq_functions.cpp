@@ -73,7 +73,7 @@ die(std::initializer_list<std::string> il)
 	std::exit(EXIT_FAILURE);
 }
 
-// TODO: use one form of exception handling.
+// TODO: use one form of error handling.
 std::tuple<const std::string, date, unsigned long, bool>
 parseArguments(int count, char **list)
 {
